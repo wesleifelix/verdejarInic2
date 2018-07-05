@@ -1,3 +1,7 @@
+import { InfosPage } from './../pages/infos/infos';
+import { MapsPage } from './../pages/maps/maps';
+import { MyaccountPage } from './../pages/myaccount/myaccount';
+import { LoginPage } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -5,6 +9,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { GaleryPage } from '../pages/galery/galery';
+import { AdminPage } from '../pages/admin/admin';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +28,13 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Login', component: LoginPage },
+      { title: 'Minha Conta', component: MyaccountPage },
+      { title: 'Mapas', component: MapsPage },
+      { title: 'Fotos', component: GaleryPage },
+      { title: 'Informações', component: InfosPage },
+      { title: 'Adminstração', component: AdminPage },
+      { title: 'Sair', component: LoginPage }
     ];
 
   }
